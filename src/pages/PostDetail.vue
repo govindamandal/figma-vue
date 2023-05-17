@@ -41,6 +41,7 @@
         <Banner />
         <Reaction />
         <Comments :comments="comments"/>
+        <CommentInput />
       </div>
     </div>
   </div>
@@ -50,8 +51,9 @@
   import Comments from '../components/Comments.vue'
   import Hashtags from '../components/Hashtags.vue'
   import Reaction from '../components/Reaction.vue'
+  import CommentInput from '../components/CommentInput.vue'
   export default {
-    components: { Reaction, Hashtags, Banner, Comments },
+    components: { Reaction, Hashtags, Banner, Comments, CommentInput },
     data: () => {
       return {
         comments: [
