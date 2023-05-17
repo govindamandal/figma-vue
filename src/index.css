@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-hashtag {
+  height: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: #5A6B87;
+  background: #F7F8FA;
+  border: 0.5px solid #CED3DE;
+  border-radius: 12px;
+}
