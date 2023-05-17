@@ -37,21 +37,18 @@
           <p class="mt-2">올해 로우라이즈가 트렌드라길래 나도 도전해보고 싶은데 말라깽이가 아닌 사람들도 잘 어울릴지 너무너무 궁금해ㅜㅜ로우라이즈 테이블에 있었던 팝들 있으면 어땠는지 후기 좀 공유해주라~~!</p>
         </div>
         <!-- Hashtags -->
-        <div class="px-2 mx-2 ml-3">
-          <button v-for="(hash, h) in hashtags" :key="h" type="button" class="rounded-md mr-2 px-4 btn-hashtag">{{ hash }}</button>
-        </div>
-
-        <div class='text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2'><img class="rounded" src="https://picsum.photos/536/354"></div>
+        <Hashtags />
+        <Banner />
+        <Reaction />
       </div>
     </div>
   </div>
 </template>
 <script>
+  import Banner from '../components/Banner.vue'
+  import Hashtags from '../components/Hashtags.vue'
+  import Reaction from '../components/Reaction.vue'
   export default {
-    data: () => {
-      return {
-        hashtags: ['#2023', '#TODAYISMONDAY', '#TOP', '#POPS!', '#WOW', '#ROW']
-      }
-    }
+  components: { Reaction, Hashtags, Banner }
   }
 </script>
